@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_img"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="-100dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/img3" />
+
+    <com.hly.pullscrollview.PullScrollView
+        android:id="@+id/pullscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:headerHeight="400dp"
+        app:headerTopHeight = "100dp"
+        app:headerVisibleHeight="150dp">
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"/>
+    </com.hly.pullscrollview.PullScrollView>
+</FrameLayout>
